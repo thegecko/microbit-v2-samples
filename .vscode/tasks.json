@@ -28,6 +28,13 @@
 				"kind": "build",
 				"isDefault": false
 			}
+		},
+		{
+			"label": "Flash Device",
+			"type": "embedded-debug.daplink-flash",
+			"serialNumber": "${command:device-manager.getSerialNumber}",
+			"program": "${workspaceFolder}/MICROBIT.hex",
+			"problemMatcher": []
 		}
 	]
 }
